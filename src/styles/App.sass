@@ -1,0 +1,60 @@
+@import './Base'
+@import './Normalize'
+
+@import './utils/mp'
+
+=font-face($family, $path, $weight: normal, $style: normal)
+	@font-face
+	  font-family: $family
+	  src: url('#{$path}.ttf') format('truetype')
+	  font-weight: $weight
+	  font-style: $style
+
++font-face(Roboto, './fonts/Roboto-Black', $weight: black, $style: normal)
++font-face(Roboto, './fonts/Roboto-Bold', $weight: bold, $style: normal)
++font-face(Roboto, './fonts/Roboto-Light', $weight: 200, $style: normal)
++font-face(Roboto, './fonts/Roboto-Thin', $weight: 100, $style: normal)
++font-face(Roboto, './fonts/Roboto-Regular', $weight: normal, $style: normal)
+
+
+.App
+	display: flex
+	color: white
+.content
+	background: gray
+
+.sidebar
+	background-color: #101010
+	min-width: 270px
+
+
+//weather widget
+.weather-img
+	width: 40%
+	&desc
+
+
+.weather-info
+	width: 90%
+	margin: 1rem auto
+	&list
+		li
+			margin-bottom: 0.5rem
+
+
+.weather-info-container
+	background-color: #101010
+	max-width: 250px
+
+//routes section
+.details
+	background: #161d27
+	border-radius: 2px
+	border: 2px solid #1b1b1b
+	h4
+		display: inline
+
+
+//chart
+.chart
+	max-width: 250px
